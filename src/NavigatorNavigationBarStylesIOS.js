@@ -108,14 +108,6 @@ function buildSceneInterpolators(startStyles, endStyles) {
         min: 0,
         max: 1,
       },
-      left: {
-        type: 'linear',
-        from: startStyles.Title.left,
-        to: endStyles.Title.left,
-        min: 0,
-        max: 1,
-        extrapolate: true,
-      },
     }),
     LeftButton: buildStyleInterpolator({
       opacity: {
@@ -126,13 +118,6 @@ function buildSceneInterpolators(startStyles, endStyles) {
         max: 1,
         round: opacityRatio,
       },
-      left: {
-        type: 'linear',
-        from: startStyles.LeftButton.left,
-        to: endStyles.LeftButton.left,
-        min: 0,
-        max: 1,
-      },
     }),
     RightButton: buildStyleInterpolator({
       opacity: {
@@ -142,14 +127,6 @@ function buildSceneInterpolators(startStyles, endStyles) {
         min: 0,
         max: 1,
         round: opacityRatio,
-      },
-      left: {
-        type: 'linear',
-        from: startStyles.RightButton.left,
-        to: endStyles.RightButton.left,
-        min: 0,
-        max: 1,
-        extrapolate: true,
       },
     }),
   };
